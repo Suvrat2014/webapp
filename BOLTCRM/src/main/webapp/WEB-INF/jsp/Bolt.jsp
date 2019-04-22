@@ -32,14 +32,14 @@
           <label style="font-family:verdana">Full Legal Name<span style="color:red">*</span></label>
       </div>
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input id="legalName" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation"></input>
+          <input id="legalName" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation" required></input>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
           <label style="font-family:verdana">RAFT Name<span style="color:red">*</span></label>
       </div>
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input id="legalName" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation"></input>
+          <input id="legalName" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation" required></input>
       </div>
 
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:75%" >
@@ -59,14 +59,14 @@
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:20px;width:95%;font-size:14" >
-          <input id="street" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Street" required></input>
+          <input id="street" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Street&#42" required></input>
           <input id="aptSuite" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Apt/Suite" required></input>
           <input id="number" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Number" required></input>
       </div>
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:95%;font-size:14" >
-          <input id="city" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="City" required></input>
-          <input id="state" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="State" required></input>
-          <input id="zipCode" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="ZipCode" required></input>
+          <input id="city" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="City&#42" required></input>
+          <input id="state" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="State&#42" required></input>
+          <input id="zipCode" style="width:30%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="ZipCode&#42" required></input>
       </div>
 
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:75%" >
@@ -91,7 +91,7 @@
       </div>
 
       <div  style="float:left;margin-top:20px;margin-bottom:30px;width:85%;text-align:center" >
-          <input type="submit" value="Submit" style="font-family:Verdana;font-size:20px;background-color:#3333CC; color:white;">
+          <input type="submit" value="Submit" style="font-family:Verdana;font-size:20px;background-color:#3333CC; color:white;border-radius:25px;">
       </div>
     </form>
   </div>
