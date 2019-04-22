@@ -25,7 +25,7 @@ public class HomeController {
     @RequestMapping("/testcontroller")
     public String controller2(Map<String, Object> model) {
         model.put("message", this.controllermessage);
-        return "/color";
+        return "/Bolt";
     }
   
     
