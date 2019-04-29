@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.poc.model.Bolt;
+import com.poc.model.CRM;
   
 @Controller
 public class HomeController {
@@ -69,6 +70,36 @@ public class HomeController {
     }
   
     
+    @RequestMapping("/crm")
+    public String controller3(Map<String, Object> model) {
+        model.put("message", this.controllermessage);
+        return "/CRM";
+    }
+  
+    @RequestMapping("/addCrmCustomer")
+    public String CRM(@ModelAttribute("SpringWeb")CRM cRM,ModelMap model) {
+    	model.addAttribute("lname", cRM.getLname());
+    	model.addAttribute("dbaname", cRM.getDbaname());
+    	model.addAttribute("addressone", cRM.getAddressone());
+    	model.addAttribute("addresstwo", cRM.getAddresstwo());
+    	model.addAttribute("addresscountry", cRM.getAddresscountry());
+    	model.addAttribute("ein", cRM.getEin());
+    	model.addAttribute("accountproducttype", cRM.getAccountproducttype());
+    	model.addAttribute("Countryoflegalformation", cRM.getCountryoflegalformation());
+    	model.addAttribute("Countryofdomicile", cRM.getCountryofdomicile());
+    	model.addAttribute("gambling", cRM.getGambling());
+    	model.addAttribute("custemail", cRM.getCustemail());
+    	model.addAttribute("natureofBusiness", cRM.getNatureofBusiness());
+    	model.addAttribute("annualSales", cRM.getAnnualSales());
+    	model.addAttribute("ownerType", cRM.getOwnerType());
+    	model.addAttribute("beneficialOwner", cRM.getBeneficialOwner());
+    	model.addAttribute("customerPermit", cRM.getCustomerPermit());
+    	model.addAttribute("purposeofaccount", cRM.getPurposeofaccount());
+    	model.addAttribute("tranFrequency", cRM.getTranFrequency());
+    	model.addAttribute("captureType", cRM.getCaptureType());
+    	
+        return "/CRMResult";
+    }    
  }
     
     
