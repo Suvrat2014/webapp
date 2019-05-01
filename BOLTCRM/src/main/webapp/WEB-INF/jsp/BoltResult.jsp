@@ -11,6 +11,16 @@
       <table>
          <tr>
             <td>Legal Name</td>
+            <td>${processId}</td>
+         </tr>
+         <tr>
+            <td>Raft Name</td>
+            <td>${instanceId}</td>
+         </tr>
+        
+        
+         <tr>
+            <td>Legal Name</td>
             <td>${lname}</td>
          </tr>
          <tr>

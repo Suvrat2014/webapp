@@ -1,6 +1,10 @@
 package com.poc.model;
 
 public class Bolt {
+	
+	private Integer processId;
+	
+	private Integer instanceId;
 
 	private String lname;
 	
@@ -27,6 +31,24 @@ public class Bolt {
 	private String businessphonenumber;
 	
 	private String email;
+
+	
+	
+	public Integer getProcessId() {
+		return processId;
+	}
+
+	public void setProcessId(Integer processId) {
+		this.processId = processId;
+	}
+
+	public Integer getInstanceId() {
+		return instanceId;
+	}
+
+	public void setInstanceId(Integer instanceId) {
+		this.instanceId = instanceId;
+	}
 
 	public String getLname() {
 		return lname;
