@@ -23,7 +23,7 @@
   </div>
   <div  style="background-color:white; height:750px;float:left;width:80%" >
   	<div  style="min-height:750px;float:left;min-width:5%" ></div>
-      <form:form method = "POST" action = "/addCustomer">   
+      <form:form method = "POST" action = "/addCustomer/${processid}/${instanceid}">   
       <div  style="min-height:100%;float:left;min-width:5%" ></div>
       <div  style="float:left;margin-top:30px;margin-bottom:10px;width:75%" >
           <label style="font-family:verdana"><b>Business Name</b></label>

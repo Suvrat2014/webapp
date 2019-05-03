@@ -22,7 +22,8 @@
       </div>
   </div>
   <div  style="background-color:white; height:1710px;float:left;width:80%" >
-      <form:form method = "POST" action = "/addCrmCustomer"> 
+  <div  style="min-height:1710px;float:left;min-width:5%" ></div>
+      <form:form method = "POST" action = "/addCrmCustomer/${processid}/${instanceid} "> 
       <div  style="min-height:100%;float:left;min-width:5%" ></div>
       <div  style="float:left;margin-top:30px;margin-bottom:10px;width:75%" >
           <label style="font-family:verdana"><b>Business Name</b></label>
@@ -32,14 +33,14 @@
           <label style="font-family:verdana">Full Legal Name<span style="color:red">*</span></label>
       </div>
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=lname id="legalName" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation" required></input>
+          <input name=lname id="legalName" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation" required></input>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
           <label style="font-family:verdana">DBA Name(If any)</label>
       </div>
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=dbaname id="dba" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation"></input>
+          <input name=dbaname id="dba" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation"></input>
       </div>
 
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:75%" >
@@ -47,10 +48,10 @@
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:20px;width:95%;font-size:14" >
-          <input name=addressone id="PAL1" style="width:75%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Primary Address Line 1" required></input>
+          <input name=addressone id="PAL1" style="width:58%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Primary Address Line 1" required></input>
       </div>
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=addresstwo id="PAL2" style="width:75%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Primary Address Line 2" required></input>
+          <input name=addresstwo id="PAL2" style="width:58%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Primary Address Line 2" required></input>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
@@ -58,7 +59,7 @@
     </div>
 
     <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-        <input name=addresscountry id="PrimaryAddressCountry" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Primary Address Country" required></input>
+        <input name=addresscountry id="PrimaryAddressCountry" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Primary Address Country" required></input>
     </div>
 
     <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
@@ -66,7 +67,7 @@
     </div>
     
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=ein id="einNumber" style="width:75%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Phone Type" required></input>
+          <input name=ein id="einNumber" style="width:58%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Phone Type" required></input>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
@@ -127,7 +128,7 @@
     </div>
 
     <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-        <input name=custemail id="customermailingaddress" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Customer Mailing Address" required></input>
+        <input name=custemail id="customermailingaddress" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Customer Mailing Address" required></input>
     </div>
 
     <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
@@ -171,7 +172,7 @@
     </div>
 
     <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-        <input id="beneficialOwner" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Customer Mailing Address" required></input>
+        <input name=beneficialOwner id="beneficialOwnerid" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Customer Mailing Address" required></input>
     </div>
 
     <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >

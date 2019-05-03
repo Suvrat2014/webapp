@@ -7,18 +7,16 @@
    </head>
 
    <body>
-      <h2>Submitted Bolt Customer Information</h2>
+      <h2>Submitted Bolt Customer Information Successfully</h2>
       <table>
          <tr>
-            <td>Legal Name</td>
-            <td>${processId}</td>
+            <td>Process Id</td>
+            <td>${processid}</td>
          </tr>
          <tr>
-            <td>Raft Name</td>
-            <td>${instanceId}</td>
-         </tr>
-        
-        
+            <td>Instance Id</td>
+            <td>${instanceid}</td>
+         </tr>       
          <tr>
             <td>Legal Name</td>
             <td>${lname}</td>
