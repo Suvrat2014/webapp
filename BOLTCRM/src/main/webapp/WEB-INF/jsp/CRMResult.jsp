@@ -9,18 +9,10 @@
    <body>
       <h2>Submitted CRM Customer Information Successfully</h2>
       <table>
-          <tr>
-            <td>Process Id</td>
-            <td>${processid}</td>
-         </tr>
-         <tr>
-            <td>Instance Id</td>
-            <td>${instanceid}</td>
-         </tr>
          <tr>
          <tr>
             <td>Legal Name</td>
-            <td>${lname}</td>
+            <td>${legalname}</td>
          </tr>
          <tr>
             <td>DBA Name</td>
@@ -36,8 +28,8 @@
             <td>${addresstwo}</td>
          </tr>
          <tr>
-            <td>Number</td>
-            <td>${addresscountry}</td>
+            <td>country</td>
+            <td>${country}</td>
          </tr>
          <tr>
             <td>City</td>

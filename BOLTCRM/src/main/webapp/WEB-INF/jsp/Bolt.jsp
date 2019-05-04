@@ -23,24 +23,18 @@
   </div>
   <div  style="background-color:white; height:750px;float:left;width:80%" >
   	<div  style="min-height:750px;float:left;min-width:5%" ></div>
-      <form:form method = "POST" action = "/addCustomer/${processid}/${instanceid}">   
+      <form:form method = "POST" action = "/addCustomer/${processid}/${instanceid}/${legalname}/${raftname}/${email}">   
       <div  style="min-height:100%;float:left;min-width:5%" ></div>
       <div  style="float:left;margin-top:30px;margin-bottom:10px;width:75%" >
           <label style="font-family:verdana"><b>Business Name</b></label>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <label style="font-family:verdana">Full Legal Name<span style="color:red">*</span></label>
-      </div>
-      <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=lname id="legalName" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation" required></input>
+          <label style="font-family:verdana">Full Legal Name<span style="color:red">*</span>: ${legalname}</label>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <label style="font-family:verdana">RAFT Name<span style="color:red">*</span></label>
-      </div>
-      <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=rname id="legalName" style="width:75%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation" required></input>
+          <label style="font-family:verdana">RAFT Name<span style="color:red">*</span>: ${raftname}</label>
       </div>
 
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:75%" >
@@ -84,13 +78,10 @@
       </div>
 
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:75%" >
-          <label style="font-family:verdana"><b>Business Email</b></label>
+          <label style="font-family:verdana"><b>Business Email</b>: ${email}</label>
       </div>
 
-      <div  style="float:left;margin-top:20px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=email id="email" style="width:90%;margin-right:10px;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Email Address" required></input>
-      </div>
-
+  
       <div  style="float:left;margin-top:20px;margin-bottom:30px;width:85%;text-align:center" >
           <input type="submit" value="Submit" style="font-family:Verdana;font-size:20px;background-color:#3333CC; color:white;border-radius:25px;">
       </div>

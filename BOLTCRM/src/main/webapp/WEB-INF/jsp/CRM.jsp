@@ -23,24 +23,18 @@
   </div>
   <div  style="background-color:white; height:1710px;float:left;width:80%" >
   <div  style="min-height:1710px;float:left;min-width:5%" ></div>
-      <form:form method = "POST" action = "/addCrmCustomer/${processid}/${instanceid} "> 
+      <form:form method = "POST" action = "/addCrmCustomer/${processid}/${instanceid}/${legalname}/${dbaname}/${country} "> 
       <div  style="min-height:100%;float:left;min-width:5%" ></div>
       <div  style="float:left;margin-top:30px;margin-bottom:10px;width:75%" >
           <label style="font-family:verdana"><b>Business Name</b></label>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <label style="font-family:verdana">Full Legal Name<span style="color:red">*</span></label>
-      </div>
-      <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=lname id="legalName" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation" required></input>
+          <label style="font-family:verdana">Full Legal Name<span style="color:red">*</span>: ${legalname}</label>
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <label style="font-family:verdana">DBA Name(If any)</label>
-      </div>
-      <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-          <input name=dbaname id="dba" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="The Timeless Marketing Corporation"></input>
+          <label style="font-family:verdana">DBA Name(If any) : ${dbaname}</label>
       </div>
 
       <div  style="float:left;margin-top:20px;margin-bottom:10px;width:75%" >
@@ -55,11 +49,7 @@
       </div>
 
       <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-        <label style="font-family:verdana">Primary Addresses Country<span style="color:red">*</span></label>
-    </div>
-
-    <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >
-        <input name=addresscountry id="PrimaryAddressCountry" style="width:58%;border:1px solid black;border-top:0px;border-left:0px;border-right:0px;" placeholder="Primary Address Country" required></input>
+        <label style="font-family:verdana">Primary Addresses Country<span style="color:red">*</span>: ${country}</label>
     </div>
 
     <div  style="float:left;margin-top:10px;margin-bottom:10px;width:95%;font-size:14" >

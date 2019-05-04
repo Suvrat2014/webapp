@@ -44,10 +44,14 @@ public class HomeController {
 
 	// Pass the processid and instanceid on both path this will be dynamically generated everytime you hit the below controller
 	// pass the processid and instanceid from bpm tool eg:- http://localhost:9093/bolt/10/10
-	@RequestMapping("/bolt/{processid}/{instanceid}")
-	public String boltView(@PathVariable("processid") String processid,@PathVariable("instanceid") String instanceid , ModelMap model) {
+	@RequestMapping("/bolt/{processid}/{instanceid}/{legalname}/{raftname}/{email}")
+	public String boltView(@PathVariable("processid") String processid,@PathVariable("instanceid") String instanceid, 
+			@PathVariable("legalname") String legalname,@PathVariable("raftname") String raftname,@PathVariable("email") String email,ModelMap model) {
 		model.addAttribute("processid", processid);
 		model.addAttribute("instanceid", instanceid);
+		model.addAttribute("legalname", legalname);
+		model.addAttribute("raftname", raftname);
+		model.addAttribute("email", email);		
 		return "/Bolt";
 	}
 
@@ -55,11 +59,11 @@ public class HomeController {
 	// Use the processid and instanceid which are present as method arguments to make the rest call to bmp.
 	// The processid and instanceid will be passed dynamically on submit button click from the above controller
 	// If you change the processid and instanceid variable names do change in respective form action also
-	@RequestMapping("/addCustomer/{processid}/{instanceid}")
+	@RequestMapping("/addCustomer/{processid}/{instanceid}/{legalname}/{raftname}/{email}")
 	public String Bolt(@PathVariable("processid") String processid,@PathVariable("instanceid") 
-	String instanceid ,@ModelAttribute("SpringWeb") Bolt bolt, ModelMap model) throws ClientProtocolException, IOException {
-		model.addAttribute("lname", bolt.getLname());
-		model.addAttribute("rname", bolt.getRname());
+	String instanceid ,@PathVariable("legalname") String legalname,@PathVariable("raftname") String raftname,@PathVariable("email") String email,@ModelAttribute("SpringWeb") Bolt bolt, ModelMap model) throws ClientProtocolException, IOException {
+		model.addAttribute("legalname", legalname);
+		model.addAttribute("raftname", raftname);
 		model.addAttribute("addresstype", bolt.getAddresstype());
 		model.addAttribute("aptSuite", bolt.getAptSuite());
 		model.addAttribute("number", bolt.getNumber());
@@ -69,7 +73,7 @@ public class HomeController {
 		model.addAttribute("phoneType", bolt.getPhoneType());
 		model.addAttribute("phoneNumber", bolt.getPhoneNumber());
 		model.addAttribute("businessphonenumber", bolt.getBusinessphonenumber());
-		model.addAttribute("email", bolt.getEmail());
+		model.addAttribute("email", email);
 		model.addAttribute("processid", processid);
 		model.addAttribute("instanceid", instanceid);
 		
@@ -101,10 +105,14 @@ public class HomeController {
 	
 	// Pass the processid and instanceid on both path this will be dynamically generated everytime you hit the below controller
 	// pass the processid and instanceid from bpm tool eg:- http://localhost:9093/crm/10/10
-	@RequestMapping("/crm/{processid}/{instanceid}")
-	public String crmView(@PathVariable("processid") String processid,@PathVariable("instanceid") String instanceid , ModelMap model) {
+	@RequestMapping("/crm/{processid}/{instanceid}/{legalname}/{dbaname}/{country}")
+	public String crmView(@PathVariable("processid") String processid,@PathVariable("instanceid") String instanceid ,
+			@PathVariable("legalname") String legalname,@PathVariable("dbaname") String dbaname,@PathVariable("country") String country, ModelMap model) {
 		model.addAttribute("processid", processid);
 		model.addAttribute("instanceid", instanceid);
+		model.addAttribute("legalname", legalname);
+		model.addAttribute("dbaname", dbaname);
+		model.addAttribute("country", country);	
 		return "/CRM";
 	}
 	
@@ -113,15 +121,16 @@ public class HomeController {
 	// Use the processid and instanceid which are present as method arguments to make the rest call to bmp.
 	// The processid and instanceid will be passed dynamically on submit button click from the above controller.
 	// If you change the processid and instanceid variable names do change in respective for
-	@RequestMapping("/addCrmCustomer/{processid}/{instanceid}")
+	@RequestMapping("/addCrmCustomer/{processid}/{instanceid}/{legalname}/{dbaname}/{country}")
 	public String controller4(@PathVariable("processid") String processid,@PathVariable("instanceid") 
-	String instanceid ,@ModelAttribute("SpringWeb") CRM cRM,ModelMap model) throws ClientProtocolException, IOException {
+	String instanceid,@PathVariable("legalname") String legalname,@PathVariable("dbaname") String dbaname,@PathVariable("country") String country 
+	,@ModelAttribute("SpringWeb") CRM cRM,ModelMap model) throws ClientProtocolException, IOException {
 
-		model.addAttribute("lname", cRM.getLname());
-		model.addAttribute("dbaname", cRM.getDbaname());
+		model.addAttribute("legalname", legalname);
+		model.addAttribute("dbaname", dbaname);
 		model.addAttribute("addressone", cRM.getAddressone());
 		model.addAttribute("addresstwo", cRM.getAddresstwo());
-		model.addAttribute("addresscountry", cRM.getAddresscountry());
+		model.addAttribute("country", country);
 		model.addAttribute("ein", cRM.getEin());
 		model.addAttribute("accountproducttype", cRM.getAccountproducttype());
 		model.addAttribute("Countryoflegalformation", cRM.getCountryoflegalformation());

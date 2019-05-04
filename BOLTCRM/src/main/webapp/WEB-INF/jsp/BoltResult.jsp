@@ -8,22 +8,14 @@
 
    <body>
       <h2>Submitted Bolt Customer Information Successfully</h2>
-      <table>
-         <tr>
-            <td>Process Id</td>
-            <td>${processid}</td>
-         </tr>
-         <tr>
-            <td>Instance Id</td>
-            <td>${instanceid}</td>
-         </tr>       
+      <table>      
          <tr>
             <td>Legal Name</td>
-            <td>${lname}</td>
+            <td>${legalname}</td>
          </tr>
          <tr>
             <td>Raft Name</td>
-            <td>${rname}</td>
+            <td>${raftname}</td>
          </tr>
          <tr>
             <td>Address type</td>
