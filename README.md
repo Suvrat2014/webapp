@@ -5,7 +5,7 @@
 
 Simple Spring Boot Application with Jsp page and Rest Controllers to Collect Form Data.
 
-version one 
+version one application/json
 
 
 
